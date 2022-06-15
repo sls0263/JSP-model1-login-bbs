@@ -1,0 +1,95 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family:sans-serif;
+
+}
+
+@media (min-width: 768px){
+.container {
+    width: 750px;
+}
+}
+body {
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top:50px;
+  width: 970px
+}
+
+.raw {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+table{
+	border-collapse:collapse;
+}
+
+ .table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 10px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+
+ table.table.table-striped {
+    width: 100%;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border: 1px solid #ccc;
+}
+
+.btn{
+    
+    border-width: 1px;
+    border-style: outset;
+    text-decoration: none;
+    color:whtie;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.pull-right {
+    float: right !important;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.btn-cancel {
+    color: #fff;
+    background-color: #DF3D3D;
+    border-color: #EF6A6A;
+}
+.btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.btn-group{
+  margin:0 auto;
+
+}

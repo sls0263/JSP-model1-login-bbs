@@ -1,0 +1,515 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+/*RESET*/
+* { margin: 0; padding: 0; }
+body { font: 17px 'Nanum Gothic', sans-serif; }
+a { text-decoration: none; color: #404040; }
+li { list-style: none; }
+
+/*BODY*/
+#loginSignUp {
+    text-align: center;
+    margin-left: 835px;
+    margin-bottom: 20px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #fff;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(71,78,98,0.4); /* 로그인창 누를 시 뒤 색깔 */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* 로그인 창 크기 */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.close2 {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+/*로그인끝*/
+#mainimg {
+    width: 140px;
+    height: 140px;
+    position: relative;
+    margin: 0 auto; /*센터정렬*/
+}
+
+#nav {
+    width: 1060px;
+    margin-top: 10px;
+    position : relative;
+    margin: 0 auto;
+
+}
+
+#nav:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main {
+    margin: 30px;
+}
+
+.main>li {
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 30px;
+    box-sizing: border-box;
+    line-height: 30px;
+    text-align: center;
+    background: #fff;
+}
+
+.main>li:hover .sub {
+    /*display: block;*/
+}
+
+.main>li a {
+    display: block;
+    transition: all 0.3s;
+}
+
+.main>li a:hover {
+    background: #009688;
+    color: #fff;
+}
+
+.sub {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background: #eee;
+    opacity: 0.9;
+}
+
+#mainbanner {
+    width: 1000px;
+    margin-top: 20px;
+    position : relative;
+    margin: 0 auto;
+}
+
+/*GLOBALS*/
+*{margin:0; padding:0; list-style:none;}
+a{text-decoration:none; color:#666;}
+a:hover{color:#1bc1a3;}
+body, hmtl{font-family: 'Anton', sans-serif;}
+
+/*mainbanner*/
+#wrapper{
+    width:1000px;
+    margin:20px auto;
+    height:400px;
+    position:relative;
+    color:#fff;
+    text-shadow:rgba(0,0,0,0.1) 2px 2px 0px;
+}
+
+#slider-wrap{
+    width:1000px;
+    height:400px;
+    position:relative;
+    overflow:hidden;
+}
+
+#slider-wrap ul#slider{
+    width:100%;
+    height:100%;
+
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+#slider-wrap ul#slider li{
+    float:left;
+    position:relative;
+    width:1000px;
+    height:400px;
+}
+
+#slider-wrap ul#slider li > div{
+    position:absolute;
+    top:20px;
+    left:35px;
+}
+
+#slider-wrap ul#slider li img{
+    display:block;
+    width:100%;
+  height: 100%;
+}
+
+/*btns*/
+.btns{
+    position:absolute;
+    width:50px;
+    height:60px;
+    top:50%;
+    margin-top:-25px;
+    line-height:57px;
+    text-align:center;
+    cursor:pointer;
+    background:rgba(0,0,0,0.2);
+    z-index:100;
+
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+.btns:hover{
+    background:rgba(0,0,0,0.5);
+}
+
+#next{right:-50px; border-radius:7px 0px 0px 7px;}
+#previous{left:-50px; border-radius:0px 7px 7px 7px;}
+#counter{
+    top: 30px;
+    right:35px;
+    width:auto;
+    position:absolute;
+}
+
+#slider-wrap.active #next{right:0px;}
+#slider-wrap.active #previous{left:0px;}
+
+
+/*bar*/
+#pagination-wrap{
+    min-width:20px;
+    margin-top:350px;
+    margin-left: auto;
+    margin-right: auto;
+    height:15px;
+    position:relative;
+    text-align:center;
+}
+
+#pagination-wrap ul {
+    width:100%;
+}
+
+#pagination-wrap ul li{
+    margin: 0 4px;
+    display: inline-block;
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    background:#fff;
+    opacity:0.5;
+    position:relative;
+  top:0;
+}
+
+#pagination-wrap ul li.active{
+  width:12px;
+  height:12px;
+  top:3px;
+    opacity:1;
+    box-shadow:rgba(0,0,0,0.1) 1px 1px 0px;
+}
+
+/*Header*/
+h1, h2{text-shadow:none; text-align:center;}
+h1{ color: #666; text-transform:uppercase;  font-size:36px;}
+h2{ color: #7f8c8d; font-family: Neucha, Arial, sans serif; font-size:18px; margin-bottom:30px;}
+
+/*ANIMATION*/
+#slider-wrap ul, #pagination-wrap ul li{
+    -webkit-transition: all 0.3s cubic-bezier(1,.01,.32,1);
+    -moz-transition: all 0.3s cubic-bezier(1,.01,.32,1);
+    -o-transition: all 0.3s cubic-bezier(1,.01,.32,1);
+    -ms-transition: all 0.3s cubic-bezier(1,.01,.32,1);
+    transition: all 0.3s cubic-bezier(1,.01,.32,1);
+}
+
+#mainfont {
+    font-size: 40pt;
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#BSimg {
+    width: 1050px;
+    margin: 0 auto; /*센터정렬*/
+}
+
+section2 {
+    display: flex;
+}
+
+ picture {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+#NAimg {
+    position: relative;
+    width: 1050px;
+    margin: 0 auto; /*센터정렬*/
+}
+
+#EVimg {
+    width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+footer {
+    background-color: #a4a4a4;
+}
+
+.foo_div {
+    float: left;
+}
+
+.foo_div1 {
+    text-align: center;
+}
+
+.foo_div1 span {
+    font-size: 11px;
+    color: white;
+}
+
+.foo_div1 p {
+    font-size: 15px;
+    margin-top: 5px;
+    color: white;
+}
+
+
+body {
+    background: white;
+}
+/* customizable snowflake styling */
+.snowflake {
+  color: #fff;
+  font-size: 1.6em;
+  font-family: Arial;
+  text-shadow: 0 0 1px #000;
+}
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+/* Demo Purpose Only*/
+.demo {
+  font-family: 'Raleway', sans-serif;
+	color:#fff;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+}
+.demo a{
+  font-family: 'Raleway', sans-serif;
+color: #000;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 212px;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 172px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.cont:hover .overlay {
+  opacity: 1;
+}
+
+.cont {
+    position: relative;
+    width: 50%;
+    max-width: 1050px;
+}
+
+.scale {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+}
+.scale:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
